@@ -1,0 +1,123 @@
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+  .inv-desk{
+    text-transform:uppercase;
+  }
+  .com-banner-parent {
+    background: url("/uploads/community-banners/Vibrant/Vibrant-Banner-Image.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    width: 100%;
+    max-width: 100%;
+  }
+
+    .com-banner-container {
+      text-align: center;
+      width: 60%;
+          /*filter: drop-shadow( 15px 15px 15px rgba(0, 0, 0, 1.00));*/
+      padding: 0px 5% 0px 5%;
+      background-color:rgba(0, 0, 0, 0.5);
+      background-color:rgba(0, 0, 0, 0.5);
+    }
+  .com-banner-logo {
+    margin-top:60px;
+    max-width: 100%;
+    max-height: 150px;
+    margin-bottom: 5%;
+    /*-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 1.00));
+    filter: drop-shadow( 15px 15px 15px rgba(0, 0, 0, 1.00));*/
+  }
+
+  .com-banner-container p {
+    margin-bottom:40px;
+    color: white;
+    font-size: 18px;
+    /*-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 1.00));
+    filter: drop-shadow( 10px  10px  10px rgba(0, 0, 0, 1.00));*/
+  }
+  .banner-btn{
+    border: 1px solid white;
+  }
+  
+
+    @media only screen and (max-width: 1024px) {
+      .com-banner-container {
+        text-align: center;
+        width: 60%;
+      }
+
+        .com-banner-container p {
+          font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+
+      .com-banner-logo {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .com-banner-container {
+        text-align: center;
+        width: 70%;
+      }
+
+        .com-banner-container p {
+          font-size: 11px;
+        }
+    }
+
